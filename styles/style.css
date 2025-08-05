@@ -827,7 +827,7 @@ background: linear-gradient(90deg, #1c1800 0%, #FF8F00 100%);
 }
 
 .jr-header-warning {
-	background: linear-gradient(45deg, #1B263B 0%, #34495E 100%);
+	background: linear-gradient(90deg, #1c1800 0%, #FF8F00 100%);
 	/* темно-бордовий для попередження */
 	color: #F5F5F5;
 	/* м’який білий */
@@ -1030,11 +1030,13 @@ background: linear-gradient(90deg, #1c1800 0%, #FF8F00 100%);
 /* FOOTER */
 
 .site-footer {
-	color: #fff;
+	color: #F5F5F5;
+	/* м'який білий для кращої читабельності */
 	position: relative;
-	background: linear-gradient(90deg, #441313 0%, #3d0000 100%);
-	background-blend-mode: normal, normal, multiply;
+	background: linear-gradient(90deg, #1c1800 0%, #FF8F00 100%);
+	background-blend-mode: normal;
 	text-align: center;
+	padding: 30px 15px;
 }
 
 .site-footer .footer-logo {
@@ -1053,7 +1055,7 @@ background: linear-gradient(90deg, #1c1800 0%, #FF8F00 100%);
 
 .footer-container {
 	max-width: 1000px;
-	padding: 0 16px 32px 16px;
+	padding: 0 16px;
 	margin: 0 auto;
 }
 
@@ -2273,7 +2275,10 @@ body .cky-notice .cky-title {
 
 .jr-section {
 	padding: 60px 20px;
-	background: #161300;
+	background: linear-gradient(to bottom,
+				#161300 0%,
+				#b8860b 80%,
+				rgba(184, 134, 11, 0) 100%);
 	color: #F5F5F5;
 }
 
