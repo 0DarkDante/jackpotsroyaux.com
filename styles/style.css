@@ -787,7 +787,7 @@ table {
 /* HEADER */
 .site-header {
 	padding: 0;
-	background: linear-gradient(90deg, #441313 0%, #3d0000 100%);
+background: linear-gradient(90deg, #1c1800 0%, #FF8F00 100%);
 	position: relative;
 	overflow: hidden;
 }
@@ -827,30 +827,30 @@ table {
 }
 
 .jr-header-warning {
-	background: #5c0000;
+	background: linear-gradient(45deg, #1B263B 0%, #34495E 100%);
+	/* темно-бордовий для попередження */
 	color: #F5F5F5;
-	font-size: 0.9rem;
+	/* м’який білий */
+	font-size: 0.95rem;
 	text-align: center;
-	padding: 10px 15px;
+	padding: 12px 20px;
+	border-bottom: 2px solid #FF8F00;
+	/* бурштиновий акцент */
 }
 
 .jr-entry-content {
-	padding: 30px 20px;
+	padding: 40px 25px;
+	background-color: #1c1800;
+	/* основний чорний фон */
 	color: #F5F5F5;
-}
-
-.jr-title {
-	font-size: 1.8rem;
-	color: #FFC652;
-	margin-bottom: 1rem;
-	text-transform: uppercase;
-	letter-spacing: 1px;
 }
 
 .jr-description {
-	font-size: 1rem;
-	line-height: 1.6;
+	font-size: 1.05rem;
+	line-height: 1.7;
 	color: #F5F5F5;
+	max-width: 800px;
+	margin: 0 auto;
 }
 
 .site-header .header-container {
@@ -872,6 +872,7 @@ table {
 .content-col p {
 	margin-bottom: 0;
 	font-size: 16px;
+	max-width: 1010px;
 }
 
 .site-header .site-branding {
@@ -940,9 +941,12 @@ table {
 
 .main-navigation a:hover,
 .main-navigation .current-menu-item a {
-	color: #fff;
+	color: #FF8F00;
+	/* бурштиновий */
 	text-decoration: none;
-	background: #6c2121d6;
+	background: rgba(44, 30, 0, 0.85);
+	/* темно-коричневий напівпрозорий фон */
+	transition: color 0.3s ease, background 0.3s ease;
 }
 
 .navbar-collapse>div {
@@ -1787,21 +1791,27 @@ body .cky-notice .cky-title {
 	margin: 0;
 }
 
-.jr-title {
-	font-size: 2.4rem;
-	margin-bottom: 2rem;
-	color: #FFC652;
-	text-transform: uppercase;
-	border-left: 5px solid #5c5a02;
-	padding-left: 14px;
-	line-height: 1.2;
-}
-
 .jr-subtitle {
 	font-size: 1.3rem;
-	color: #FFA000;
+	color: #FF8F00;
+	/* бурштиновий трохи м’якіший за #FFA000 */
 	margin-top: 1.8rem;
 	margin-bottom: 0.5rem;
+	animation: pulseGlow 3s ease-in-out infinite;
+}
+
+@keyframes pulseGlow {
+
+	0%,
+	100% {
+		color: #FF8F00;
+		text-shadow: 0 0 5px #FF8F00;
+	}
+
+	50% {
+		color: #FFC652;
+		text-shadow: 0 0 10px #FFC652;
+	}
 }
 
 .jr-text {
@@ -2276,10 +2286,8 @@ body .cky-notice .cky-title {
 .jr-title {
 	font-size: 2rem;
 	margin-bottom: 1.8rem;
-	color: #FF8F00;
+	color: #fff;
 	text-transform: uppercase;
-	border-left: 4px solid #5c5a02;
-	padding-left: 14px;
 	line-height: 1.3;
 }
 
@@ -2319,7 +2327,7 @@ body .cky-notice .cky-title {
 }
 
 .modal-content {
-	background: linear-gradient(135deg, #441313, #680202);
+	background: linear-gradient(135deg, #441313, linear-gradient(45deg, #1B263B 0%, #34495E 100%));
 	color: #fff;
 	max-width: 480px;
 	width: 90%;
@@ -2486,7 +2494,7 @@ body .cky-notice .cky-title {
 }
 
 .age-buttons button {
-	background: linear-gradient(90deg, #680202, #a02e2e);
+	background: linear-gradient(90deg, linear-gradient(45deg, #1B263B 0%, #34495E 100%), #a02e2e);
 	border: none;
 	padding: 12px 28px;
 	color: #fff;
@@ -2560,7 +2568,7 @@ body .cky-notice .cky-title {
 }
 
 .btn-accept {
-	background: linear-gradient(90deg, #680202, #a02e2e);
+	background: linear-gradient(90deg, linear-gradient(45deg, #1B263B 0%, #34495E 100%), #a02e2e);
 	color: #fff;
 	box-shadow: 0 4px 8px rgba(164, 47, 47, 0.6);
 }
